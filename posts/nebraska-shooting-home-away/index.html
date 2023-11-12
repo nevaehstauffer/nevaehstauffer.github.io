@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nevaeh Stauffer">
-<meta name="dcterms.date" content="2022-11-10">
+<meta name="dcterms.date" content="2023-11-10">
 
-<title>Nevaeh Stauffer’s Sports Data Blog - CHANGE THIS TO BE THE TITLE OF YOUR POST</title>
+<title>Nevaeh Stauffer’s Sports Data Blog - Does Nebraska Men’s Baskebtall Shoot Better Behind the 3 Point Line on their Home Court?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,11 +142,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">CHANGE THIS TO BE THE TITLE OF YOUR POST</h1>
+      <h1 class="title">Does Nebraska Men’s Baskebtall Shoot Better Behind the 3 Point Line on their Home Court?</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">lowercaseword</div>
-                <div class="quarto-category">lowercaseword</div>
-                <div class="quarto-category">lowercaseword</div>
+                <div class="quarto-category">nebraska</div>
+                <div class="quarto-category">basketball</div>
+                <div class="quarto-category">shooting</div>
               </div>
                   </div>
   </div>
@@ -164,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 10, 2022</p>
+        <p class="date">November 10, 2023</p>
       </div>
     </div>
     
@@ -182,7 +182,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>sliflskjdflksjdlkjsdlk</p>
+<p>For the last five seasons, only 1 of 5 have ended with a winning record and that was back in the 2018-2019 season. In the next four, the best record they have had was when they went 16-16 last season. It seems Nebraska’s men’s basketball team shoots way better when they play at home compared to when they’re away. Is it their home atmosphere or just the familiarity of PBA? Let’s see if numbers can back up this idea.</p>
+<p>Sports Reference is a sports statistics website that provides the shooting percentages over each of the last five seasons. You can see the percentages of overall shots, free throws, and three-pointers. Within the data, it is easy to calculate Nebraska and the rest of college basketball’s shooting averages while differentiating the home and away games. To determine whether there is a clear answer about where the Husker’s shoot best, let’s look at Nebraska’s home and away shooting percentages from the last 5 seasons.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -214,8 +215,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span> </span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">data =</span> menthrees, <span class="fu">aes</span>(<span class="at">x =</span> Year, <span class="at">y =</span> Average3PPct, <span class="at">color =</span> Location, <span class="at">group=</span>Location)) <span class="sc">+</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Nebraska's Shooting Strain Beyond Home Court"</span>,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Chatter"</span>,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Nebraska Shoots better with the home court advantage"</span>,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"1 out of the 5 last seasons their 3P% on the road is worse"</span>,</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Year"</span>,</span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Averages"</span>,</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Sports Reference | Nevaeh Stauffer"</span></span>
@@ -230,7 +231,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>skdlnfslkjdflksjdklfjsd</p>
+<p>Nebraska has shot significantly better on their home court behind the three point line for 4 out of the 5 past seasons. During the 2021-2022 season the away percentage was better but not by much.</p>
+<p>Now let’s compare the same data about Nebraska’s last five seasons to the rest of the teams in the Big 10 and see where they stand.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -296,8 +298,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>nuhome, </span>
 <span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">x=</span>Average3PPct, <span class="at">y=</span>Season, <span class="at">label=</span>TeamLocation)) <span class="sc">+</span> </span>
 <span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Nebraska's Shooting Strain Beyond Home Court"</span>,</span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Chatter"</span>,</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Nebraska's Three Point shooting is just average "</span>,</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Comparing the Huskers to the Big Ten, Nebraska is in the middle"</span>,</span>
 <span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Averages"</span>,</span>
 <span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Season"</span>,</span>
 <span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Sports Reference | Nevaeh Stauffer"</span></span>
@@ -312,7 +314,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>sdkfjsljdkflksjdfkls</p>
+<p>So we know that Nebraska shoots better behind the arc with the home court advantage. But compared to the rest of the Big Ten, those percentages still aren’t great and are just about average. Now let’s see if Nebraska’s best home shooting percentages rank in the top 10 in the Big Ten over the past five seasons.</p>
 <div class="cell">
 <details>
 <summary>Code</summary>
@@ -327,8 +329,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">Average3PPct =</span> <span class="st">"Percentage"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Does Nebraska have a chance to be special this season?"</span>,</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Amy Williams' team is near the bottom of a tough conference where it matters most."</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Behind the arc isn't where the Huskers are most likely to dominate"</span>,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"Nebraska's best 3 Point Percentage doesn't even rank in the Top 10"</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> <span class="fu">tab_style</span>(</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
@@ -364,23 +366,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </details>
 <div class="cell-output-display">
 
-<div id="kkfvntsmch" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#kkfvntsmch table {
+<div id="xokrtgezsb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xokrtgezsb table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#kkfvntsmch thead, #kkfvntsmch tbody, #kkfvntsmch tfoot, #kkfvntsmch tr, #kkfvntsmch td, #kkfvntsmch th {
+#xokrtgezsb thead, #xokrtgezsb tbody, #xokrtgezsb tfoot, #xokrtgezsb tr, #xokrtgezsb td, #xokrtgezsb th {
   border-style: none;
 }
 
-#kkfvntsmch p {
+#xokrtgezsb p {
   margin: 0;
   padding: 0;
 }
 
-#kkfvntsmch .gt_table {
+#xokrtgezsb .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -406,12 +408,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_caption {
+#xokrtgezsb .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#kkfvntsmch .gt_title {
+#xokrtgezsb .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -423,7 +425,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#kkfvntsmch .gt_subtitle {
+#xokrtgezsb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -435,7 +437,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#kkfvntsmch .gt_heading {
+#xokrtgezsb .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -447,13 +449,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_bottom_border {
+#xokrtgezsb .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_col_headings {
+#xokrtgezsb .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -468,7 +470,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_col_heading {
+#xokrtgezsb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -488,7 +490,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#kkfvntsmch .gt_column_spanner_outer {
+#xokrtgezsb .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -500,15 +502,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#kkfvntsmch .gt_column_spanner_outer:first-child {
+#xokrtgezsb .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#kkfvntsmch .gt_column_spanner_outer:last-child {
+#xokrtgezsb .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#kkfvntsmch .gt_column_spanner {
+#xokrtgezsb .gt_column_spanner {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -520,11 +522,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#kkfvntsmch .gt_spanner_row {
+#xokrtgezsb .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#kkfvntsmch .gt_group_heading {
+#xokrtgezsb .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -550,7 +552,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#kkfvntsmch .gt_empty_group_heading {
+#xokrtgezsb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -565,15 +567,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#kkfvntsmch .gt_from_md > :first-child {
+#xokrtgezsb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#kkfvntsmch .gt_from_md > :last-child {
+#xokrtgezsb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#kkfvntsmch .gt_row {
+#xokrtgezsb .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -592,7 +594,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#kkfvntsmch .gt_stub {
+#xokrtgezsb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -605,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kkfvntsmch .gt_stub_row_group {
+#xokrtgezsb .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -619,15 +621,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#kkfvntsmch .gt_row_group_first td {
+#xokrtgezsb .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#kkfvntsmch .gt_row_group_first th {
+#xokrtgezsb .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#kkfvntsmch .gt_summary_row {
+#xokrtgezsb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -637,16 +639,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kkfvntsmch .gt_first_summary_row {
+#xokrtgezsb .gt_first_summary_row {
   border-top-style: none;
   border-top-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_first_summary_row.thick {
+#xokrtgezsb .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#kkfvntsmch .gt_last_summary_row {
+#xokrtgezsb .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -656,7 +658,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_grand_summary_row {
+#xokrtgezsb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -666,7 +668,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kkfvntsmch .gt_first_grand_summary_row {
+#xokrtgezsb .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -676,7 +678,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_last_grand_summary_row_top {
+#xokrtgezsb .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -686,11 +688,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_striped {
+#xokrtgezsb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#kkfvntsmch .gt_table_body {
+#xokrtgezsb .gt_table_body {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -699,7 +701,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_footnotes {
+#xokrtgezsb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -713,7 +715,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_footnote {
+#xokrtgezsb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -722,7 +724,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kkfvntsmch .gt_sourcenotes {
+#xokrtgezsb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -736,7 +738,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#kkfvntsmch .gt_sourcenote {
+#xokrtgezsb .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -744,73 +746,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#kkfvntsmch .gt_left {
+#xokrtgezsb .gt_left {
   text-align: left;
 }
 
-#kkfvntsmch .gt_center {
+#xokrtgezsb .gt_center {
   text-align: center;
 }
 
-#kkfvntsmch .gt_right {
+#xokrtgezsb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#kkfvntsmch .gt_font_normal {
+#xokrtgezsb .gt_font_normal {
   font-weight: normal;
 }
 
-#kkfvntsmch .gt_font_bold {
+#xokrtgezsb .gt_font_bold {
   font-weight: bold;
 }
 
-#kkfvntsmch .gt_font_italic {
+#xokrtgezsb .gt_font_italic {
   font-style: italic;
 }
 
-#kkfvntsmch .gt_super {
+#xokrtgezsb .gt_super {
   font-size: 65%;
 }
 
-#kkfvntsmch .gt_footnote_marks {
+#xokrtgezsb .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#kkfvntsmch .gt_asterisk {
+#xokrtgezsb .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#kkfvntsmch .gt_indent_1 {
+#xokrtgezsb .gt_indent_1 {
   text-indent: 5px;
 }
 
-#kkfvntsmch .gt_indent_2 {
+#xokrtgezsb .gt_indent_2 {
   text-indent: 10px;
 }
 
-#kkfvntsmch .gt_indent_3 {
+#xokrtgezsb .gt_indent_3 {
   text-indent: 15px;
 }
 
-#kkfvntsmch .gt_indent_4 {
+#xokrtgezsb .gt_indent_4 {
   text-indent: 20px;
 }
 
-#kkfvntsmch .gt_indent_5 {
+#xokrtgezsb .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
 <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
   <thead>
     <tr class="gt_heading">
-      <td colspan="3" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Does Nebraska have a chance to be special this season?</td>
+      <td colspan="3" class="gt_heading gt_title gt_font_normal" style="color: #000000; text-align: left; font-weight: bold;">Behind the arc isn't where the Huskers are most likely to dominate</td>
     </tr>
     <tr class="gt_heading">
-      <td colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">Amy Williams' team is near the bottom of a tough conference where it matters most.</td>
+      <td colspan="3" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border" style="color: #000000; text-align: left;">Nebraska's best 3 Point Percentage doesn't even rank in the Top 10</td>
     </tr>
     <tr class="gt_col_headings">
       <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-bottom-width: 3px; border-bottom-style: solid; border-bottom-color: #000000; font-size: 12; font-weight: bold;" scope="col" id="Team">Team</th>
@@ -860,6 +862,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+<p>Over the course of the past 5 seasons, Nebraska’s best at home shooting percentage doesn’t even rank in the top 10.</p>
+<p>So Nebraska has had some great individual shooters on their team but as a team, behind the three point line isn’t where you are gonna see them perform at their best abilities.</p>
 
 
 
